@@ -14,6 +14,10 @@
 		A12AAE5822137CA4001FFE44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A12AAE5722137CA4001FFE44 /* Assets.xcassets */; };
 		A12AAE5B22137CA6001FFE44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A12AAE5922137CA6001FFE44 /* LaunchScreen.storyboard */; };
 		A12AAE6622137CA9001FFE44 /* focusTomato3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12AAE6522137CA8001FFE44 /* focusTomato3Tests.swift */; };
+		A12AAE7122137D43001FFE44 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12AAE7022137D43001FFE44 /* TableViewController.swift */; };
+		A12AAE7322137DEE001FFE44 /* activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12AAE7222137DEE001FFE44 /* activity.swift */; };
+		A12AAE7722138A83001FFE44 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12AAE7622138A83001FFE44 /* TableViewCell.swift */; };
+		A16E97E7221F488000743799 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16E97E6221F488000743799 /* SignInViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +42,10 @@
 		A12AAE6122137CA7001FFE44 /* focusTomato3Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = focusTomato3Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A12AAE6522137CA8001FFE44 /* focusTomato3Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = focusTomato3Tests.swift; sourceTree = "<group>"; };
 		A12AAE6722137CAC001FFE44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A12AAE7022137D43001FFE44 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		A12AAE7222137DEE001FFE44 /* activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = activity.swift; sourceTree = "<group>"; };
+		A12AAE7622138A83001FFE44 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		A16E97E6221F488000743799 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +90,10 @@
 				A12AAE4D22137CA0001FFE44 /* AppDelegate.swift */,
 				A12AAE4F22137CA0001FFE44 /* ViewController.swift */,
 				A12AAE5122137CA0001FFE44 /* Main.storyboard */,
+				A16E97E6221F488000743799 /* SignInViewController.swift */,
+				A12AAE7622138A83001FFE44 /* TableViewCell.swift */,
+				A12AAE7222137DEE001FFE44 /* activity.swift */,
+				A12AAE7022137D43001FFE44 /* TableViewController.swift */,
 				A12AAE5722137CA4001FFE44 /* Assets.xcassets */,
 				A12AAE5922137CA6001FFE44 /* LaunchScreen.storyboard */,
 				A12AAE5C22137CA7001FFE44 /* Info.plist */,
@@ -200,9 +212,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A16E97E7221F488000743799 /* SignInViewController.swift in Sources */,
+				A12AAE7322137DEE001FFE44 /* activity.swift in Sources */,
 				A12AAE5622137CA1001FFE44 /* focusTomato3.xcdatamodeld in Sources */,
 				A12AAE5022137CA0001FFE44 /* ViewController.swift in Sources */,
+				A12AAE7722138A83001FFE44 /* TableViewCell.swift in Sources */,
 				A12AAE4E22137CA0001FFE44 /* AppDelegate.swift in Sources */,
+				A12AAE7122137D43001FFE44 /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
