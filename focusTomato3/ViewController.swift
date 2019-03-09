@@ -47,10 +47,12 @@ class ViewController: UIViewController {
     
     
     @IBAction func resetTimer(_ sender: UIButton) {
+        timer.invalidate()
         minutes = 25
         seconds = 0
         startButton.isEnabled = true
         updateTimeLabel()
+        
     }
     
     @IBAction func completeSession(_ sender: Any) {
