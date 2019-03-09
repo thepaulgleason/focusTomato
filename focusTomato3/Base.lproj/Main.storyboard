@@ -134,7 +134,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Stop"/>
                                 <connections>
-                                    <action selector="stopTimer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Snc-rE-kBE"/>
+                                    <action selector="stopTimer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C4d-9n-wkr"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FWY-dD-bax">
@@ -205,6 +205,7 @@
                         <outlet property="inSessionLabel" destination="ge3-F5-msQ" id="BUD-PA-xkG"/>
                         <outlet property="resetButton" destination="FWY-dD-bax" id="3Nz-55-8IY"/>
                         <outlet property="sessionNameLabel" destination="rWH-Gv-YaF" id="dgZ-I3-pri"/>
+                        <outlet property="startButton" destination="Jm8-2V-R6A" id="gcm-p4-VGM"/>
                         <outlet property="stopButton" destination="xw4-ti-xcf" id="Gdp-Xr-TmV"/>
                         <outlet property="timeLabel" destination="Ak3-LG-g2W" id="nbu-Og-Bxn"/>
                         <outlet property="totalTimeElapsedLabel" destination="1Ep-dm-Li3" id="oaq-Gv-jpm"/>

@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var inSessionLabel: UILabel!
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var totalTimeElapsedLabel: UILabel!
+    @IBOutlet weak var startButton: UIButton!
     @IBOutlet weak var stopButton: UIButton!
     @IBOutlet weak var resetButton: UIButton!
     
@@ -30,15 +31,29 @@ class ViewController: UIViewController {
     }
 
     @IBAction func startTimer(_ sender: UIButton) {
-
-            
-
-            resetButton.isEnabled = true
-
+            stopButton.isEnabled = true
+            startButton.isEnabled = false
             inSessionLabel.text = "time to work!"//have fun prompts telling the user to get to work
             timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(ViewController.countDown), userInfo: nil, repeats: true)
 
 
+    }
+    
+    @IBAction func stopTimer(_ sender: UIButton) {
+        timer.invalidate()
+        stopButton.isEnabled = false
+        startButton.isEnabled = true
+    }
+    
+    
+    @IBAction func resetTimer(_ sender: UIButton) {
+        minutes = 25
+        seconds = 0
+        startButton.isEnabled = true
+        updateTimeLabel()
+    }
+    
+    @IBAction func completeSession(_ sender: Any) {
     }
     
     @objc func countDown(){
@@ -72,14 +87,5 @@ class ViewController: UIViewController {
         }
     }
     
-    
-    
-    @IBAction func stopTimer(_ sender: Any) {
-        
-    }
-    @IBAction func resetTimer(_ sender: Any) {
-    }
-    @IBAction func completeSession(_ sender: Any) {
-    }
 }
 
