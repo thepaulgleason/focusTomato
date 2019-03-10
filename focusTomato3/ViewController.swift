@@ -9,7 +9,9 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    var activity: Activity?
+    
     @IBOutlet weak var sessionNameLabel: UILabel!
     @IBOutlet weak var inSessionLabel: UILabel!
     @IBOutlet weak var timeLabel: UILabel!
@@ -27,7 +29,15 @@ class ViewController: UIViewController {
      var inSession = true
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        setUI()
+        
+    }
+    
+    func setUI(){
+        sessionNameLabel.text = activity?.name
         timeLabel.text = String(minutes) + ":00"
+        
     }
 
     @IBAction func startTimer(_ sender: UIButton) {
